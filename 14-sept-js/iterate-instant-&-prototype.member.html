@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype in js</title>
+</head>
+<body>
+     <script>
+                //prototype in js
+
+                var mobile = function (model_no){
+
+                    // Instant-Member
+                    this.model = model_no ;
+                    this.price = 3000;
+                };
+
+                var samsung = new mobile('Galaxy');
+                var nokia = new mobile('3310');
+
+                         //prototype-member
+                mobile.prototype.color='white';
+
+              for (var key in samsung) {
+                document.write(key);
+              };
+                
+              //output- model-price-color
+     </script>
+</body>
+</html>

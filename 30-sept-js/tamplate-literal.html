@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamplate-literal or tamplate-string</title>
+</head>
+<body>
+    <h1>multiline-strings</h1>
+
+            <script>
+                    var str = `hello
+                               usd`;
+                    console.log(str)
+
+                    //note- at this situation the single quote and
+                   // double quote are not working in multiline-strings
+
+            </script>
+
+            <h1>string-Interpolation</h1>
+
+            <script>
+                var str = "hello"
+                document.write(`${str} world ${"<br>"}`);
+            </script>
+
+            <script>
+                var str = "hello"
+                document.write(`${str} world ${5+4}  ${"<br>"}`);
+            </script>
+
+            <script>
+                function myfun(say){
+                    return say;
+                }
+                document.write(`${myfun("hello")} world`);
+            </script>
+
+
+
+
+</body>
+</html>

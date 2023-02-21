@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-constructor</title>
+</head>
+<body>
+
+    <h1>usd</h1>
+
+        <script>
+                               // object-constructor
+
+                    var fees = new Object();
+                     // or var fees = { } ;
+                    console.log("fees",fees)
+                    fees['Rahul']=100;
+                    fees['Sumit']=200;
+                    fees['Amar']=300;
+                    document.write(fees['Amar']);
+        </script>
+
+
+                                       <hr>
+                        <!-- other method of writing same code -->
+
+
+        <script>
+                               // object-constructor
+
+                    var fees = new Object();
+                    // or var fees = { } ;
+                    fees.rahul=100;
+                    fees.Sumit=200;
+                    fees.Amar=300;
+                    document.write(fees.Amar);
+        </script>
+
+<hr>
+
+        <script>
+                               // object-constructor
+
+                    var fees = new Object();
+                     // or var fees = { } ;
+                    fees.rahul=100;
+                    fees.Sumit=200;
+                    fees.Amar=300;
+                    fees.total=function(){return(100+200);};
+                    document.write(fees.total());
+        </script>
+        
+</body>
+</html>

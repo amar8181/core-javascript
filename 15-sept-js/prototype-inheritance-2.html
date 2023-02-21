@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype inheritance-method in JS</title>
+</head>
+<body>
+        <script>
+                //prototype inheritance one super and two sub classes
+
+                //super class
+                var Mobile=function(){
+
+                }
+
+                //prototype method
+                Mobile.prototype.getModel = function() { 
+                    return this.model;
+                }
+
+                //sub class
+                var Samsung = function(model, price){
+                    this.model = model;
+                    this.price = price;
+                }
+
+                //sub class
+                var Lenovo = function(model){
+                    this.model = model;
+                }
+
+                //inheritance code
+                Samsung.prototype = Object.create(Mobile.prototype);
+                Samsung.prototype.consrtuctor = Samsung ;
+
+                Lenovo.prototype = Object.create(Mobile.prototype);
+                Lenovo.prototype.consrtuctor = Lenovo ;
+
+                var galaxy = new Samsung ('Galaxy' , 3000);
+                 console.log(galaxy.getModel());
+                 document.write(galaxy.getModel());
+
+        </script>
+</body>
+</html>

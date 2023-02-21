@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties-exists</title>
+</head>
+<body>
+          <script>
+                        // how to cheak properties exists in js
+                
+                        function Mobile(model_no) {
+                            this.model=model_no;
+                            this.memory= 4;
+                        }
+
+                        var samsung = new Mobile ('Galaxy');
+                        var nokia = new Mobile ('3310');
+
+                        // below code this is the - how to cheak properties exists in js
+
+                        if(typeof nokia.momery == 'undefined')
+                         {
+                        document.write("avialable");
+                       }
+                        else {
+                         document.write("doesnt exists");
+                       }
+
+          </script>
+
+          <hr>
+
+          <script>
+                        // how to cheak properties exists in js
+                
+                        function Mobile (model_no){
+                            this.model=model_no;
+                          //  this.memory= 4;
+                        }
+                        var samsung = new Mobile ('galaxy');
+                        var nokia = new Mobile ('3310');
+
+                        // below code this is the - how to cheak properties exists in js
+
+                        if(typeof nokia.momery !== 'undefined'){
+                        document.write("avialable");
+                       } else {
+                         document.write("doesnt exists");
+                       }
+
+          </script>
+</body>
+</html>

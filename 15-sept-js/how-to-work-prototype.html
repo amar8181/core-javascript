@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to work prototype in js</title>
+</head>
+<body>
+        <script>
+                    //how to work prototype in js
+
+                    function mobile(){
+
+                    }
+                    console.log(mobile.prototype);
+
+                    var lg=new mobile();
+                    console.log(lg.__proto__);
+
+                    // for verifying
+                    console.log(mobile.prototype===lg.__proto__);
+                    console.log(mobile===lg.__proto__.constructor);
+                    console.log(mobile===mobile.prototype.constructor);
+
+                    //output in console log is = true
+                    //output in console log is = true
+                    //output in console log is = true       
+        </script>
+
+<hr>
+
+        <script>
+                        //     how to work prototype in js
+
+                        function mobile(){
+                            this.a=20;
+                        }                
+                        mobile.prototype.a=10;
+                        var lg = new mobile();
+                        console.log(lg.a);
+                        
+                        //output in console log is = 20 
+                        // but
+                        // this.a=20 are in commemt
+                        //then
+                        //output in console log is = 10 
+        </script>
+</body>
+</html>

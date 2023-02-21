@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable-scope</title>
+</head>
+<body>
+                                    <!-- // variable-scope -->
+     <script>
+                                    
+                    // global-variable
+
+                    // assesseble from anywhere
+
+                    var i= "<h1>i am a globle variable</h1>";
+                                                                                //1st
+                    function show()
+                    {
+                        document.write(i + "<br>");  //inside function
+                    }
+                    show()
+                    document.write(i + "<br>");      //outside function
+
+                                                                                //2nd
+                        function disp()
+                        {
+                            document.write(i + "<br>");  //inside function
+                        }
+                        disp()
+                                                                                //3rd
+                        if(true)
+                        {
+                            document.write(i + "<br>");  //inside block
+                        }
+
+     </script>
+
+                        <hr>
+
+                        <script>
+                                //local variable
+
+
+                                function show()
+                    {
+                        var j= "<h1>i am a local variable</h1>";
+                        document.write(j + "<br>");  //inside function
+                    }
+                    show()
+                       document.write(j + "<br>");      //outside function
+
+                        </script>
+</body>
+</html>

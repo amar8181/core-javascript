@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+          <h1>
+             //Array
+             // Declaration and initialization of array 
+            // using Array Literal
+            //most useful method</h1>
+
+            <script>
+
+                var student = ["amar", "sam","mahesh",90];         // student is the Array Name
+                    document.write(student+ "<br>");
+                    document.write(student[0]+ "<br>");
+                                                            // or
+                    document.write(student[1]+ "<br>");
+                    document.write(student[2]+ "<br>");
+                    document.write(student[3]+ "<br>");
+
+                    // or
+
+                    var a=10 , b=20 , c=30;
+                    var price= [a,b,c];
+                    document.write(price);
+                                                                // or
+                    document.write(price[0]+ "<br>");
+                    document.write(price[1]+ "<br>");
+                    document.write(price[2]+ "<br>");
+                    document.write(price[3])+ "<br>";
+
+    </script>
+
+<hr>
+
+                    <h1>//Array
+                        // Declaration and initialization of array 
+                        // using Array constructor</h1>
+
+    <script>
+                
+   // 1st method--NOT IMPORTANT-- only for information and concept clearation
+
+                var vehicle = new Array("audi","maruti","royel enfield","tata");
+                    document.write(vehicle + "<br>");
+                    document.write(vehicle [0]+ "<br>");
+                    document.write(vehicle [1]+ "<br>");
+                    document.write(vehicle [2]+ "<br>");
+                    document.write(vehicle [3]+ "<br>");
+                    
+                                                                                // or
+
+     //  2nd method--IMPORTANT-- most useful method
+
+                var student = ["amar", "sam","mahesh",90];
+                    document.write(student + "<br>");
+                   document.write(student[0]+ "<br>");
+                    document.write(student[1]+ "<br>");
+                    document.write(student[2]+ "<br>");
+                    document.write(student[3]+ "<br>");
+ 
+                    var a=10 , b=20 , c=30, d="shyam";
+                    var price= [a,b,c,d];
+                    document.write(price + "<br>");
+                    document.write(price[0]+ "<br>");
+                    document.write(price[1]+ "<br>");
+                    document.write(price[2]+ "<br>");
+                    document.write(price[3],);
+
+    </script>
+
+<hr>
+
+          <h1>//modification of array element</h1>
+                     <script>
+                            
+
+                            var student = ["amar", "sam","mahesh",90];
+                                document.write(student + "<br>");
+
+                                student[0]="sumit";                       //sumit replace by amar
+                                document.write(student + "<br>");
+
+                            //     // or
+
+                                var student = ["amar", "sam","mahesh",90];
+                                var boys = student; 
+                                document.write(student + "<br>");
+                                document.write(boys + "<br>");
+
+                                boys[0]="prasad";                       //prasad replace by amar
+                                document.write(boys + "<br>");
+
+
+                  </script>
+<hr>
+
+             <h1>removing or delete array element</h1>
+                        <script>
+
+                                var student = ["amar", "sam","mahesh",90];
+                                document.write(student+"<br>");
+
+                                delete student[1];
+                                document.write(student +"<br>");
+                                document.write(student[1])
+
+                        </script>
+
+<hr>
+
+                          <h1> Array length property in </h1>
+
+                        <script>
+                                 var student = ["amar", "sam","mahesh",90];
+                                 document.write(student.length);
+
+                                //  output=4
+                        </script>
+
+<hr>
+
+                        <h1> Array using For loop</h1>
+
+                        <script>
+                            var student = ["amar", "sam","mahesh",90];
+                            for(let i=0; i<=3; i++)
+                            {
+                                document.write(student[i] +"<br>");
+                            }
+                        </script>
+                                                                                                        <br>
+                                                <!-- important method -->
+                        <script>
+                            var student = ["amar", "sam","mahesh",90];
+
+                            var ln=student.length;                 // number of elements are shown by using length property
+
+                            for(let i=0; i<ln; i++)
+                            {
+                                document.write(student[i] +"<br>");
+                            }
+                        </script>
+
+<hr>
+
+                        <h1>Array using forEach loop in js</h1>
+
+                        <script>
+                            var student = ["amar", "sam", "mahesh", 90, 20, 45, "sanket"];
+
+                                student.forEach(function(value) {
+                                    document.write(student + "<br>");
+                                });
+                        </script>
+
+                        <br>
+
+                        <script>
+                            var student = ["amar", "sam", "mahesh", 90, 20, 45, "sanket"];
+
+                                student.forEach(function(value,index) {
+                                    document.write(student +" "+ index +"<br>");
+                                });
+                        </script>
+
+    <hr>
+
+                            <h1>splice method in js by using array</h1>
+
+                            <h2>how to delete element by splice method</h2>
+
+                            <script>
+                                var student = ["rahul","amar","harshal","mahesh","sam"];
+                                student.splice(2);
+                                document.write(student);
+                            </script>
+            <br>
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                student.splice(2,2);
+                                document.write(student);
+                            </script>
+            <br>
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                student.splice(2,3);
+                                document.write(student);
+                            </script>
+           <br>
+
+                            <h2>how to insert new element by splice method</h2>
+
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                student.splice(2,0,"specific");
+                                document.write(student);
+                            </script>
+            <br>
+
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                student.splice(2,0,"specific","mathametics");
+                                document.write(student);
+                            </script>
+
+ <hr>
+                               <h1>indexOf method in js</h1>
+
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                var position= student.indexOf("swapnil")
+                                document.write(position);
+                            </script>
+                <br>
+                            
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                var position= student.indexOf("harshal")
+                                document.write(position);
+                            </script>
+                <br>
+                            <script>
+                                var student = ["45","amar","harshal","mahesh","sam"];
+                                var position= student.indexOf("mahesh",2)              //position of index are counted from 2
+                                document.write(position);
+                            </script>
+               
+<hr>
+
+                        <h1>fill() method in js</h1>
+
+                        <script>
+                            var student = ["45","amar","harshal","mahesh","sam"];
+                            student.fill("rakesh")
+                            document.write(student);
+                            //output = rakesh,rakesh,rakesh,rakesh,rakesh
+                        </script>
+                <br>
+                        <script>
+                            var student = ["45","amar","harshal","mahesh","sam"];
+                            student.fill("rakesh",1,3)                        //index no. 3 are not counted.
+                            document.write(student);
+                            //output = 45,rakesh,rakesh,mahesh,sam
+                        </script>
+                <br>
+                        <script>
+                                 var student = new Array(3).fill("mangesh");
+                                document.write(student);
+                                //output = mangesh,mangesh,mangesh
+                        </script>
+<hr>
+                    <h1>unshift() method in js using array</h1>
+
+                    <script>
+                           var student = ["amar","harshal","mahesh","sam"];
+                           student.unshift("rakesh","kanika")  
+                           document.write(student+"<br>"); 
+                           //output -   rakesh,kanika,amar,harshal,mahesh,sam
+              
+                    </script>
+                <br>
+                    <script>
+                        var student = ["amar","harshal","mahesh","sam"];
+                           student_length=student.unshift("rakesh","kanika")  
+                           document.write(student +"<br>"); 
+                          // output - rakesh,kanika,amar,harshal,mahesh,sam
+                           document.write(student_length); 
+                           // output - 6
+
+                    </script>
+<hr>
+                    <h1>push method in js using array</h1>
+                    
+                    <script>
+                         var student = ["amar","harshal","mahesh","sam"];
+                           student.push("rakesh","kanika")  
+                           document.write(student+"<br>");
+                           //output - amar,harshal,mahesh,sam,rakesh,kanika
+                    </script>
+                <br>
+                <script>
+                    var student = ["amar","harshal","mahesh","sam"];
+                       student_length=student.push("rakesh","kanika")  
+                       document.write(student +"<br>"); 
+                      // output - amar,harshal,mahesh,sam,rakesh,kanika
+
+                       document.write(student_length); 
+                       // output - 6
+
+                </script>
+<hr>
+                <h1>shift method using array in js</h1>
+
+                    <script>
+                         var student = ["amar","harshal","mahesh","sam"];
+                         var student_removed = student.shift();
+                           student.shift()  
+                           document.write(student+"<br>");
+                          // output - harshal,mahesh,sam
+   
+                         document.write(student_removed+"<br>");
+                         // output - amar
+                         document.write(student);
+                         //output - mahesh,sam
+
+                    </script>
+
+<hr>
+                <h1>pop method in js using </h1>
+
+                        <script>
+                           var student = ["amar","harshal","mahesh","sam"];
+                           student.pop() ; 
+                           document.write(student+"<br>");
+                        </script>
+
+<hr>
+                    <h1>boolean un js</h1>
+
+                    <script>
+                        // document.write("10:" + Boolean(10)+"<br");
+
+                        // document.write("-10:" + Boolean(-10)+"<br");
+
+                        // document.write("0:" + Boolean(0)+"<br");
+                        // document.write("-0:" + Boolean(-0)+"<br");
+                        // document.write("hello:" + Boolean("hello")+"<br");
+                        // document.write("nan:" + Boolean(NaN)+"<br");
+                        // document.write("null:" + Boolean(null)+"<br");
+                        // document.write("true:" + Boolean("true")+"<br");
+                        // document.write("false:" + Boolean("false")+"<br");
+                        // document.write("No para:" + Boolean()+"<br");
+                        document.write("empty:" + Boolean("")+"<br");
+                    </script>
+</body>
+
+</html>

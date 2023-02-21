@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    
+    <script>
+            //constructor in js
+
+            function vehicle(){
+                this.model="swift_vdi";
+                this.price= function(){
+                    document.write(this.model+" "+"Price Rs. 800000"+"<br>");
+                }
+            }
+            var maruti_suzuki = new vehicle () ;
+            maruti_suzuki.price()
+            var mahindra = new vehicle () ;
+             mahindra.price();
+    </script>
+
+    <hr>
+
+    <script>
+            //constructor with parameter in js
+
+            function vehicle(swift_vdi){
+                this.model="swift_vdi";
+                this.price= function(){
+                    document.write(this.model+" "+"Price Rs. 800000"+"<br>");
+                }
+            }
+            var maruti_suzuki = new vehicle ('maruti');
+            var mahindra = new vehicle ('scorpio');
+            maruti_suzuki.price();
+             mahindra.price();
+    </script>
+</body>
+</html>

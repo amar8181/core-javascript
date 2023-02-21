@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6-class in js</title>
+</head>
+<body>
+     <script>
+                //ES6-class in js
+                //class Declaration 
+
+                class Mobile {
+                    constructor(){
+                        //Instant member
+                        this.a=12;
+                        this.show=function(){
+                            return "Instant Member";
+                        };
+                    }
+                    //Prototype member
+                    display() {
+                        return "Prototype Member";
+                    }
+                }
+                 //object
+                 var nokia =new Mobile();
+                 document.write(nokia.a+"<br>");
+                 document.write(nokia.show()+"<br>");
+                 document.write(nokia.display());
+                
+                //output 12
+                //Instant Member
+                //Prototype Member
+
+     </script>
+</body>
+</html>

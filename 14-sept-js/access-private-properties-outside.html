@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>access-private-properties-outside</title>
+</head>
+<body>
+            <script>
+                        //    access-private-properties from outside
+
+                        var mobile=function(model_no ,sprice){
+                            this.model=model_no;
+                            this.color='white';
+                            var price= 3000;
+                            this.sp= sprice;
+                            this.cellprice= function(){
+                                return(price);
+                            };                            
+                        };
+                        var samsung = new mobile ('galaxy',2000);
+                        var nokia = new mobile ('3310',1000);
+                        document.write(nokia.cellprice());
+
+                        //output- 3000
+
+                                
+            </script>
+</body>
+</html>

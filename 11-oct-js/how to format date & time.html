@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to format date & time</title>
+</head>
+<body>
+    <h1>how to format date & time</h1>
+
+        <script>
+            var tarikh = new Date();
+        document.write(formatDate(tarikh)+"<br>");
+
+        function formatDate(dat){
+            var date = dat.getDate();
+            var month = dat.getmonth();
+                month++;
+                var year =dat.getFullYear();
+                return date +" / "+ month +" / "+ year
+        };
+        </script>
+        <!-- this program is not running -->
+
+        <!-- other method-->
+
+        <script>
+                        var tarikh = new Date();
+                            
+        </script>
+</body>
+</html>

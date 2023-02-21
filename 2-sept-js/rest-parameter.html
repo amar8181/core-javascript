@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest parameter</title>
+</head>
+<body>
+        <script>
+                                                //Rest parameter
+                function show(...args)
+                {
+                    document.write(...args);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+        <script>
+                                                //Rest parameter
+                function show(a,b,...args)
+                {
+                    document.write(a);
+                    document.write(b);
+                    document.write(...args);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+        <script>
+                                                //Rest parameter
+                function show(...args)
+                {
+                    document.write(args[2]);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+        <script>
+                                                //Rest parameter
+                function show(...args)
+                {
+                    document.write(args[0]);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+        <script>
+                                                //Rest parameter
+                function show(...args)
+                {
+                    document.write(args[1]);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+        <script>
+                                               //Rest parameter
+                function show(...args)
+                {
+                    document.write(args[4]);
+                }
+                show(10,20,30,40,50)
+        </script>
+                                                <hr>
+</body>
+</html>

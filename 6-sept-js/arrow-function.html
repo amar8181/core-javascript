@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow-function</title>
+</head>
+<body>
+                <script>
+
+             //arrow-function
+
+                            var display=()=>
+                            {
+                                document.write("amar"+"<br>");
+                            };
+                            display();
+
+              //arrow-function with parameter
+
+                            var display=(a)=>
+                            {
+                                document.write(a+"<br>");
+                            };
+                            display(10);
+
+                                                    //or
+                                                    var display=(a ,b)=>
+                                                    {
+                                                        document.write(a+" "+b+"<br>");
+                                                    };
+                                                    display(10,20);
+
+                            //or arrow-function with default parameter
+                            var display=(a ,b=30)=>
+                            {
+                                document.write(a+" "+b+"<br>");
+                            };
+                            display(50);
+
+
+
+                                   //or arrow-function with default parameter
+                            
+                                       var display=(a ,b=30)=>
+                                    {
+                                        document.write(a+" "+b+"<br>");
+                                    };
+                                    display(50);
+
+                                            //or arrow-function with rest parameter
+
+                                            var display=(a ,...args)=>
+                                            {
+                                                document.write(a+" "+args+"<br>");
+                                            };
+                                            display(50 ,20 ,1 , 2);
+
+                </script>
+</body>
+</html>

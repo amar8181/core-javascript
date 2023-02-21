@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number.isInteger-method</title>
+</head>
+<body>
+        <h1>    </h1>
+
+        <script>
+                document.write(Number.isInteger()+"<br>");     //false
+            document.write(Number.isInteger(100)+"<br>");      //true
+            document.write(Number.isInteger(-100)+"<br>");         //true
+            document.write(Number.isInteger(100.45)+"<br>");       //false
+            document.write(Number.isInteger(200-100)+"<br>");      //true
+            document.write(Number.isInteger(0.1)+"<br>");      //false
+            document.write(Number.isInteger("100")+"<br>");      //false
+            document.write(Number.isInteger("hello"));      //false
+        </script>
+</body>
+</html>

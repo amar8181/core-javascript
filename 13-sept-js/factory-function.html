@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factory function</title>
+</head>
+<body>
+       <script>
+                                            //factory function
+                                            
+                            function mobile(){
+                                return{
+                                    model:'galaxy',
+                                    price: function(){return"price rs.3000";}
+                                };
+                            }
+                            var samsung = mobile ();
+                            document.write(samsung.model+" "+ samsung.price());
+       </script>
+
+       <hr>
+
+       <script>
+                                            //factory function with parameter
+
+                            function mobile(model_no){
+                                return{
+                                    model:model_no,
+                                    price: function(){return"price rs.3000";}
+                                };
+                            }
+                            var samsung = mobile ("galaxy");
+                            var nokia = mobile ("3310");
+                            document.write(samsung.model+" "+ samsung.price()+"<br>");
+                            document.write(nokia.model+" "+ nokia.price());
+
+       </script>
+</body>
+</html>

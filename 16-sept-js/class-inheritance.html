@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-inheritance</title>
+</head>
+<body>
+    <script>
+                // class-inheritance
+
+                class Father {
+                    showFMoney(){
+                        return "Father Money <br>";
+                    }
+                }
+                class Son extends Father {
+                    showSMoney(){
+                        return "Son Money <br>";
+                    }
+                }
+                class GrandSon extends Son {
+                    showGMoney(){
+                        return "Grand Son Money";
+                    }
+                }
+
+                var s = new Son();
+
+                document.write(s.showFMoney());
+                document.write(s.showSMoney());
+                
+              
+    </script>
+
+    <hr>
+
+    <script>
+                // class-inheritance
+
+                class Mother {
+                    showMMoney(){
+                        return "Mother Money <br>";
+                    }
+                }
+                class Daughter extends Mother {
+                    showDMoney(){
+                        return "Daughter Money <br>";
+                    }
+                }
+                class GrandDaughter extends Daughter {
+                    showLMoney(){
+                        return "Grand Daughter Money";
+                    }
+                }
+
+            
+                var g = new GrandDaughter();
+
+                document.write(g.showMMoney());
+                document.write(g.showDMoney());
+                document.write(g.showLMoney());
+    </script>
+</body>
+</html>

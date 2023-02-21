@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parseInt-method</title>
+</head>
+<body>
+    <h1>parseInt-method in Globle js method</h1>
+
+    <script>
+        document.write(parseInt("10")+"<br>");
+        document.write(parseInt("12.00")+"<br>");
+        document.write(parseInt("15.45")+"<br>");
+        document.write(parseInt("10 20 30")+"<br>");
+        document.write(parseInt(" 90 ")+"<br>");
+        document.write(parseInt("10 years")+"<br>");
+        document.write(parseInt("years 10")+"<br>");
+        document.write(parseInt("020")+"<br>");
+        document.write(parseInt("12",8)+"<br>");
+        document.write(parseInt("0x12")+"<br>");
+        document.write(parseInt("10",16)+"<br>");
+    </script>
+
+    <!-- Output -->
+           <!-- 10
+                12
+                15
+                10
+                90
+                10
+                NaN
+                20
+                10
+                18
+                16  -->
+</body>
+</html>

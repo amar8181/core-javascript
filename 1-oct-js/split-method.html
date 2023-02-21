@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split-method</title>
+</head>
+<body>
+    <script>
+        var str = "hello guys what r u doing";
+        var arr = str.split(" ");
+        document.write(arr);
+    </script>
+    <!-- output-- hello,guys,what,r,u,doing -->
+
+    <hr>
+
+    <script>
+        var str = "hello&guys&what&r&u&doing";
+        var arr = str.split("&");
+        document.write(arr);
+    </script>
+        <!-- output-- hello,guys,what,r,u,doing -->
+
+<br>
+    <script>
+        var str = "hello&guys&what&r&u&doing";
+        var arr = str.split("&");
+        document.write(arr[5]);
+    </script>
+        <!-- output-- doing -->
+
+</body>
+</html>
