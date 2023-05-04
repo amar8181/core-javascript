@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array</title>
+
     
 </head>
 <body>
@@ -17,30 +18,27 @@
             <script>
 
                 var student = ["amar", "sam","mahesh",90];         // student is the Array Name
-                    document.write(student+ "<br>");
-                    document.write(student[0]+ "<br>");
-                                                            // or
+                    // document.write(student+ "<br>");
+                    // document.write(student[0]+ "<br>");
                     document.write(student[1]+ "<br>");
-                    document.write(student[2]+ "<br>");
-                    document.write(student[3]+ "<br>");
+                    // document.write(student[2]+ "<br>");
+                    // document.write(student[3]+ "<br>");
 
                     // or
 
                     var a=10 , b=20 , c=30;
                     var price= [a,b,c];
-                    document.write(price);
-                                                                // or
-                    document.write(price[0]+ "<br>");
+                    // document.write(price);
+                    // document.write(price[0]+ "<br>");
                     document.write(price[1]+ "<br>");
-                    document.write(price[2]+ "<br>");
-                    document.write(price[3])+ "<br>";
+                    // document.write(price[2]+ "<br>");
+                    // document.write(price[3])+ "<br>";
 
     </script>
 
 <hr>
 
-                    <h1>//Array
-                        // Declaration and initialization of array 
+                    <h1>// Declaration and initialization of array 
                         // using Array constructor</h1>
 
     <script>
@@ -48,10 +46,10 @@
    // 1st method--NOT IMPORTANT-- only for information and concept clearation
 
                 var vehicle = new Array("audi","maruti","royel enfield","tata");
-                    document.write(vehicle + "<br>");
-                    document.write(vehicle [0]+ "<br>");
-                    document.write(vehicle [1]+ "<br>");
-                    document.write(vehicle [2]+ "<br>");
+                    // document.write(vehicle + "<br>");
+                    // document.write(vehicle [0]+ "<br>");
+                    // document.write(vehicle [1]+ "<br>");
+                    // document.write(vehicle [2]+ "<br>");
                     document.write(vehicle [3]+ "<br>");
                     
                                                                                 // or
@@ -59,19 +57,19 @@
      //  2nd method--IMPORTANT-- most useful method
 
                 var student = ["amar", "sam","mahesh",90];
-                    document.write(student + "<br>");
-                   document.write(student[0]+ "<br>");
-                    document.write(student[1]+ "<br>");
-                    document.write(student[2]+ "<br>");
+                //     document.write(student + "<br>");
+                //    document.write(student[0]+ "<br>");
+                //     document.write(student[1]+ "<br>");
+                //     document.write(student[2]+ "<br>");
                     document.write(student[3]+ "<br>");
  
                     var a=10 , b=20 , c=30, d="shyam";
                     var price= [a,b,c,d];
                     document.write(price + "<br>");
-                    document.write(price[0]+ "<br>");
-                    document.write(price[1]+ "<br>");
-                    document.write(price[2]+ "<br>");
-                    document.write(price[3],);
+                    // document.write(price[0]+ "<br>");
+                    // document.write(price[1]+ "<br>");
+                    // document.write(price[2]+ "<br>");
+                    // document.write(price[3]);
 
     </script>
 
@@ -82,17 +80,17 @@
                             
 
                             var student = ["amar", "sam","mahesh",90];
-                                document.write(student + "<br>");
+                                // document.write(student + "<br>");
 
-                                student[0]="sumit";                       //sumit replace by amar
+                                // student[0]="sumit";                       //sumit replace by amar
                                 document.write(student + "<br>");
 
                             //     // or
 
                                 var student = ["amar", "sam","mahesh",90];
                                 var boys = student; 
-                                document.write(student + "<br>");
-                                document.write(boys + "<br>");
+                                // document.write(student + "<br>");
+                                // document.write(boys + "<br>");
 
                                 boys[0]="prasad";                       //prasad replace by amar
                                 document.write(boys + "<br>");
@@ -105,11 +103,11 @@
                         <script>
 
                                 var student = ["amar", "sam","mahesh",90];
-                                document.write(student+"<br>");
+                                // document.write(student+"<br>");
 
                                 delete student[1];
                                 document.write(student +"<br>");
-                                document.write(student[1])
+                                // document.write(student[1])
 
                         </script>
 
@@ -128,13 +126,13 @@
 
                         <h1> Array using For loop</h1>
 
-                        <script>
+                        <!-- <script>
                             var student = ["amar", "sam","mahesh",90];
                             for(let i=0; i<=3; i++)
                             {
                                 document.write(student[i] +"<br>");
                             }
-                        </script>
+                        </script> -->
                                                                                                         <br>
                                                 <!-- important method -->
                         <script>
@@ -152,7 +150,7 @@
 
                         <h1>Array using forEach loop in js</h1>
 
-                        <script>
+                        <!-- <script>
                             var student = ["amar", "sam", "mahesh", 90, 20, 45, "sanket"];
 
                                 student.forEach(function(value) {
@@ -160,7 +158,7 @@
                                 });
                         </script>
 
-                        <br>
+                        <br> -->
 
                         <script>
                             var student = ["amar", "sam", "mahesh", 90, 20, 45, "sanket"];
@@ -176,16 +174,16 @@
 
                             <h2>how to delete element by splice method</h2>
 
-                            <script>
+                            <!-- <script>
                                 var student = ["rahul","amar","harshal","mahesh","sam"];
                                 student.splice(2);
                                 document.write(student);
-                            </script>
+                            </script> -->
             <br>
-                            <script>
+                            <!-- <script>
                                 var student = ["45","amar","harshal","mahesh","sam"];
                                 student.splice(2,2);
-                                document.write(student);
+                                document.write(student); -->
                             </script>
             <br>
                             <script>
@@ -204,27 +202,27 @@
                             </script>
             <br>
 
-                            <script>
+                            <!-- <script>
                                 var student = ["45","amar","harshal","mahesh","sam"];
                                 student.splice(2,0,"specific","mathametics");
                                 document.write(student);
-                            </script>
+                            </script> -->
 
  <hr>
                                <h1>indexOf method in js</h1>
 
-                            <script>
+                            <!-- <script>
                                 var student = ["45","amar","harshal","mahesh","sam"];
                                 var position= student.indexOf("swapnil")
                                 document.write(position);
-                            </script>
+                            </script> -->
                 <br>
                             
-                            <script>
+                            <!-- <script>
                                 var student = ["45","amar","harshal","mahesh","sam"];
                                 var position= student.indexOf("harshal")
                                 document.write(position);
-                            </script>
+                            </script> -->
                 <br>
                             <script>
                                 var student = ["45","amar","harshal","mahesh","sam"];
@@ -235,20 +233,20 @@
 <hr>
 
                         <h1>fill() method in js</h1>
-
+<!-- 
                         <script>
                             var student = ["45","amar","harshal","mahesh","sam"];
                             student.fill("rakesh")
                             document.write(student);
                             //output = rakesh,rakesh,rakesh,rakesh,rakesh
-                        </script>
+                        </script> -->
                 <br>
-                        <script>
+                        <!-- <script>
                             var student = ["45","amar","harshal","mahesh","sam"];
                             student.fill("rakesh",1,3)                        //index no. 3 are not counted.
                             document.write(student);
                             //output = 45,rakesh,rakesh,mahesh,sam
-                        </script>
+                        </script> -->
                 <br>
                         <script>
                                  var student = new Array(3).fill("mangesh");
